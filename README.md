@@ -2,7 +2,7 @@
 
 A comprehensive collection of text animation components for React applications. Easily add visually engaging text effects to your websites and applications.
 
-![Text Animation Preview](https://minhvo.is-a.dev/text-animation-preview.png)
+![Text Animation Preview](https://minhvo.is-a.dev/TextFX-preview.png)
 
 ## Features
 
@@ -15,15 +15,15 @@ A comprehensive collection of text animation components for React applications. 
 
 ## Demo
 
-Visit [https://minhvo.is-a.dev/text-animation](https://minhvo.is-a.dev/text-animation) to see all animations in action.
+Visit [https://minhvo.is-a.dev/TextFX](https://minhvo.is-a.dev/TextFX) to see all animations in action.
 
 ## Installation
 
 ```bash
-git clone https://github.com/minhvo-dev/text-animation.git
-cd text-animation
-npm install
-npm run dev
+git clone https://github.com/minhvo-dev/TextFX.git
+cd TextFX
+pnpm install
+pnpm dev
 ```
 
 ## Available Animations
@@ -42,22 +42,23 @@ This collection includes the following animations:
 10. **Gradient**: Color gradient transition effect
 11. **Flip**: 3D flip animation
 12. **Scale**: Size scaling animation
-13. **Slot Machine**: Slot machine style character changing
-14. **Matrix**: Matrix code-like falling characters
-15. **Scramble**: Characters scrambling before settling
-16. **3D Perspective**: Text with 3D perspective movement
-17. **Fire**: Burning text with flame effects
-18. **Neon**: Neon sign glow effect
-19. **Water**: Water ripple effect on text
-20. **Shadow Dance**: Dynamic shadow movement
-21. **Ink Blot**: Ink spreading animation
-22. **Typewriter**: Enhanced typewriter with cursor
-23. **Magnetic**: Magnetic field interaction with mouse
-24. **Hologram**: Sci-fi holographic projection
-25. **Cyber**: Cyberpunk styled text with grid effects
-26. **Sand**: Desert sand particle effect
-27. **Circuit**: Electronic circuit path animation
-28. **Split Horror**: Horror-themed splitting effect
+13. **Ink Blot**: Ink spreading animation
+14. **Cyber**: Cyberpunk styled text with grid effects
+15. **Slot Machine** *(in development)*: Slot machine style character changing
+16. **Matrix** *(in development)*: Matrix code-like falling characters
+17. **Scramble** *(in development)*: Characters scrambling before settling
+18. **3D Perspective** *(in development)*: Text with 3D perspective movement
+19. **Fire** *(in development)*: Burning text with flame effects
+20. **Neon** *(in development)*: Neon sign glow effect
+21. **Water** *(in development)*: Water ripple effect on text
+22. **Shadow Dance** *(in development)*: Dynamic shadow movement
+23. **Typewriter** *(in development)*: Enhanced typewriter with cursor
+24. **Magnetic** *(in development)*: Magnetic field interaction with mouse
+25. **Hologram** *(in development)*: Sci-fi holographic projection
+26. **Sand** *(in development)*: Desert sand particle effect
+27. **Circuit** *(in development)*: Electronic circuit path animation
+28. **Split Horror** *(in development)*: Horror-themed splitting effect
+29. **Glitch 3D** *(in development)*: Advanced 3D glitch effect with RGB splitting
 
 ## Usage
 
@@ -109,4 +110,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For any questions or suggestions, feel free to reach out at minh@example.com or create an issue in this repository. 
+For any questions or suggestions, feel free to reach out at vnqminh0502@gmail.com or create an issue in this repository. 
