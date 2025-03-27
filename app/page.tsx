@@ -1,41 +1,42 @@
 "use client";
 
-import { useState } from "react";
-import { TextSlashAnimation } from "@/components/text-slash-animation";
-import { TextReveal } from "@/components/text-reveal";
-import { TypingAnimation } from "@/components/typing-animation";
-import { ShineAnimation } from "@/components/shine-animation";
-import { FadeAnimation } from "@/components/fade-animation";
-import { BounceAnimation } from "@/components/bounce-animation";
-import { WaveAnimation } from "@/components/wave-animation";
-import { GlitchAnimation } from "@/components/glitch-animation";
 import { BlurAnimation } from "@/components/blur-animation";
-import { GradientAnimation } from "@/components/gradient-animation";
-import { FlipAnimation } from "@/components/flip-animation";
-import { ScaleAnimation } from "@/components/scale-animation";
-import { SlotMachineAnimation } from "@/components/slot-machine-animation";
-import { MatrixAnimation } from "@/components/matrix-animation";
-import { ScrambleAnimation } from "@/components/scramble-animation";
-import { PerspectiveAnimation } from "@/components/perspective-animation";
-import { FireAnimation } from "@/components/fire-animation";
-import { NeonAnimation } from "@/components/neon-animation";
-import { WaterAnimation } from "@/components/water-animation";
-import { ShadowDanceAnimation } from "@/components/shadow-dance-animation";
-import { InkBlotAnimation } from "@/components/ink-blot-animation";
-import { TypewriterAnimation } from "@/components/typewriter-animation";
-import { MagneticAnimation } from "@/components/magnetic-animation";
-import { HologramAnimation } from "@/components/hologram-animation";
-import { CyberAnimation } from "@/components/cyber-animation";
-import { SandAnimation } from "@/components/sand-animation";
+import { BounceAnimation } from "@/components/bounce-animation";
 import { CircuitAnimation } from "@/components/circuit-animation";
-import { SplitHorrorAnimation } from "@/components/split-horror-animation";
+import { CyberAnimation } from "@/components/cyber-animation";
+import { FadeAnimation } from "@/components/fade-animation";
+import { FireAnimation } from "@/components/fire-animation";
+import { FlipAnimation } from "@/components/flip-animation";
+import { Footer } from "@/components/footer";
 import { Glitch3DAnimation } from "@/components/glitch-3d-animation";
+import { GlitchAnimation } from "@/components/glitch-animation";
+import { GradientAnimation } from "@/components/gradient-animation";
+import { HologramAnimation } from "@/components/hologram-animation";
+import { InkBlotAnimation } from "@/components/ink-blot-animation";
+import { MagneticAnimation } from "@/components/magnetic-animation";
+import { MatrixAnimation } from "@/components/matrix-animation";
+import { NeonAnimation } from "@/components/neon-animation";
+import { PerspectiveAnimation } from "@/components/perspective-animation";
+import { SandAnimation } from "@/components/sand-animation";
+import { ScaleAnimation } from "@/components/scale-animation";
+import { ScrambleAnimation } from "@/components/scramble-animation";
+import { ShadowDanceAnimation } from "@/components/shadow-dance-animation";
+import { ShineAnimation } from "@/components/shine-animation";
+import { SlotMachineAnimation } from "@/components/slot-machine-animation";
+import { SplitHorrorAnimation } from "@/components/split-horror-animation";
+import Focus from "@/components/text-focus";
+import { TextReveal } from "@/components/text-reveal";
+import { TextSlashAnimation } from "@/components/text-slash-animation";
+import { TypewriterAnimation } from "@/components/typewriter-animation";
+import { TypingAnimation } from "@/components/typing-animation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { Footer } from "@/components/footer";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Switch } from "@/components/ui/switch";
+import { WaterAnimation } from "@/components/water-animation";
+import { WaveAnimation } from "@/components/wave-animation";
+import { useState } from "react";
 
 // Animation type enum
 enum AnimationType {
@@ -68,10 +69,11 @@ enum AnimationType {
   CIRCUIT = "circuit",
   SPLIT_HORROR = "split_horror",
   GLITCH_3D = "glitch_3d",
+  FOCUS = "focus",
 }
 
 // Animation component mapping
-const ANIMATION_COMPONENTS: Record<AnimationType, React.FC<{ text: string; className: string; darkMode: boolean }>> = {
+const ANIMATION_COMPONENTS: Record<AnimationType, React.FC<{ text: string; className?: string; darkMode: boolean }>> = {
   [AnimationType.SLASH]: TextSlashAnimation,
   [AnimationType.REVEAL]: TextReveal,
   [AnimationType.TYPING]: TypingAnimation,
@@ -101,6 +103,7 @@ const ANIMATION_COMPONENTS: Record<AnimationType, React.FC<{ text: string; class
   [AnimationType.CIRCUIT]: CircuitAnimation,
   [AnimationType.SPLIT_HORROR]: SplitHorrorAnimation,
   [AnimationType.GLITCH_3D]: Glitch3DAnimation,
+  [AnimationType.FOCUS]: Focus,
 };
 
 export default function Home() {
@@ -150,6 +153,7 @@ export default function Home() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value={AnimationType.SLASH}>Slash Animation</SelectItem>
+                  <SelectItem value={AnimationType.FOCUS}>Text Focus</SelectItem>
                   <SelectItem value={AnimationType.REVEAL}>Text Reveal</SelectItem>
                   <SelectItem value={AnimationType.TYPING}>Typing</SelectItem>
                   <SelectItem value={AnimationType.SHINE}>Shine</SelectItem>
